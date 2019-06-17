@@ -86,6 +86,10 @@ section{
     min-height: 20em;
 }
 
+/* p {  
+    text-indent: 2.0em;  
+  }   */
+
 h6,h7,h8, a:hover{
     text-decoration: none;
     
