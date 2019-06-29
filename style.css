@@ -1,12 +1,18 @@
 *{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
-
+    
 }
 .angel {
-    border-radius: 70%;
+    border-radius: 60%;
     float: top;
-  }
+   
+    animation: mymove 5s infinite;
+}
+
+.pimages{
+    animation: mymove 5s infinite;
+}
 h2,h3,h4,h5{
     color: whitesmoke;
     background-color: rgba(194, 193, 193, 0.349);
@@ -98,8 +104,8 @@ h6,h7,h8 a{
 
 h6,h7,h8{
     font-size: 25px;
-    color: whitesmoke;
-  
+    color: rgb(100, 83, 73);
+    
 }
 
 
@@ -111,18 +117,22 @@ h6,h7,h8{
     justify-content: center;
     font-size: 25px;
     text-align: center;
+    /* box-shadow: 5px 10px; */
     
-
+    
 }
 
 #projects article{
-    background: rgba(128, 128, 128, 0.13);
     padding: 1em;
+    width: 100%;
+ 
+
 }
 
-#projects article{
-   width: 100%;
+@keyframes mymove {
+        50% {box-shadow: 10px 20px 30px rgb(37, 37, 37);}
 }
+
 section > p {
     margin: 1em 0;
     font-size: 17px;
