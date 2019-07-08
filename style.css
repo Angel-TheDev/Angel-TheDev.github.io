@@ -6,12 +6,9 @@
 .angel {
     border-radius: 80%;
     float: top;
-   
     animation: mymove 5s infinite;
 }
 
-.pimages{
-}
 h2,h3,h4,h5{
     color: whitesmoke;
     background-color: rgba(194, 193, 193, 0.349);
@@ -113,7 +110,25 @@ h6,h7,h8{
     
 }
 
+#prompt {
+    animation: mymove1 5s infinite; 
+    display: flex;
+    color: rgba(148, 140, 140, 0.568);
+    background-color: transparent;
+    border: none;
+    justify-content: center;
+    font-size: 2em;
+    font-style: bold;
+    border-radius: 50%
+    
+}
 
+#promptResponse{
+    display: flex;
+    color: rgba(148, 140, 140, 0.568);
+    font-size: 1.5em;
+    
+}
 #projects{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -134,19 +149,16 @@ h6,h7,h8{
 
 }
 
-@keyframes mymove {
-        50% {box-shadow: 10px 20px 30px rgba(95, 91, 91, 0.664);}
-}
 
 section > p {
     margin: 1em 0;
     font-size: 17px;
-
+    
 }
 
 #contactMe{
     font-size: 17px;
-
+    
 }
 
 
@@ -161,3 +173,10 @@ footer{
     padding-top: 1.5em;
     min-height: 2em;
 }
+@keyframes mymove {
+ 50% {box-shadow: 20px 30px 40px rgba(95, 91, 91, 0.726);}
+}
+
+@keyframes mymove1 {
+    40% {box-shadow: 10px 20px 30px rgba(95, 91, 91, 0.527);}
+   }
