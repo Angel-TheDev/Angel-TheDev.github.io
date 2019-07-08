@@ -6,7 +6,7 @@
 .angel {
     border-radius: 80%;
     float: top;
-    animation: mymove 5s infinite;
+    animation: mymove1 5s infinite;
 }
 
 h2,h3,h4,h5{
@@ -52,6 +52,8 @@ header span{
     justify-content: flex-end;
     text-shadow: 1.5px 1px 1px white;
 }
+
+
 body{
     background-image: url("images/light.jpg");
     background-size: cover;
@@ -125,7 +127,7 @@ h6,h7,h8{
 
 #promptResponse{
     display: flex;
-    color: rgba(148, 140, 140, 0.568);
+    color: rgba(105, 100, 100, 0.753);
     font-size: 1.5em;
     
 }
@@ -174,9 +176,9 @@ footer{
     min-height: 2em;
 }
 @keyframes mymove {
- 50% {box-shadow: 20px 30px 40px rgba(95, 91, 91, 0.726);}
+ 50% {box-shadow: 10px 10px 20px rgba(95, 91, 91, 0.726);}
 }
 
 @keyframes mymove1 {
-    40% {box-shadow: 10px 20px 30px rgba(95, 91, 91, 0.527);}
+    40% {box-shadow: 10px 20px 30px rgba(71, 70, 62, 0.623);}
    }
