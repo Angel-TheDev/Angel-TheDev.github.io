@@ -4,14 +4,13 @@
     
 }
 .angel {
-    border-radius: 60%;
+    border-radius: 80%;
     float: top;
    
     animation: mymove 5s infinite;
 }
 
 .pimages{
-    animation: mymove 5s infinite;
 }
 h2,h3,h4,h5{
     color: whitesmoke;
@@ -84,6 +83,12 @@ nav a{
 
 nav a:hover{
     background:white;
+    animation: mymove 5s infinite;
+}
+
+main{
+    max-width: 800px;
+    margin:0 auto;
 }
 
 section{
@@ -130,7 +135,7 @@ h6,h7,h8{
 }
 
 @keyframes mymove {
-        50% {box-shadow: 10px 20px 30px rgb(37, 37, 37);}
+        50% {box-shadow: 10px 20px 30px rgba(95, 91, 91, 0.664);}
 }
 
 section > p {
