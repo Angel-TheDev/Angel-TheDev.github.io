@@ -137,7 +137,7 @@ h6,h7,h8{
 }
 #projects{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,3fr);
     grid-template-rows: auto;
     grid-column-gap: 1em;
     justify-content: center;
