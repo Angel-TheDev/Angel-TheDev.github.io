@@ -1,7 +1,24 @@
-var promptButton = document.getElementById('prompt');
-promptButton.onclick = function() {
- var response = prompt('Enter your name below');
- var displayContainer = document.getElementById('promptResponse');
- displayContainer.innerText = 'Hi ' + response + '! Im glad you took the time to visit my portfolio.' + 'Select the "Enter" button at the top of the page to continue.';
+
+var index = 1;
+slides(index);
+
+function next_Prev(n) {
+  slides(index += n);
 }
 
+function frontSlide(n) {
+  slides(index = n);
+}
+
+function slides(n) {
+    var i;
+    var slide = document.getElementsByClassName("project");
+  if (n > slide.length) {index = 1} 
+  if (n < 1) {index = slide.length}
+  for (i = 0; i < slide.length; i++) {
+      slide[i].style.display = "none"; 
+  }
+
+  slide[index-1].style.display = "block"; 
+
+}
