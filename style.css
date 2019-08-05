@@ -1,25 +1,43 @@
 *{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     
 }
+body{
+    background-color: #FFFFF6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 300px; 
+    max-height: 500px;
+    background-size: 100%;
+}
 #angel {
-    border-radius: 80%;
-    float: top;
+    display: flex;
+    border-radius: 2%;
+    /* float: top; */
     animation: mymove1 5s infinite;
+    justify-content: right;
 }
 
-h2,h3,h4,h5{
-    color: whitesmoke;
+
+h2 {
+    color: #D1003E;
     background-color: rgba(194, 193, 193, 0.349);
     font-size: 34px;
     display: flex;
     flex-flow: row;
     justify-content: center;
+    font-family: 'Bungee Hairline', cursive;
+}
+
+h3 {
+    color: #000000;
 }
 
 p{
     text-indent: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
 }
         
 main{
@@ -29,17 +47,18 @@ main{
 header{
     padding: 15em 20em;
     color: rgb(148, 140, 140);
-    background-image: url(images/spotlight.jpg);
+    background-color: transparent;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     margin: 3.17rem auto 0;
-    max-height: 12rem;
-    height: 12rem;
+    /* max-height: 12rem;
+    height: 12rem; */
+    font-family: 'Roboto', sans-serif;
 }
 header:hover{
     background: transparent;
-    color:  rgba(148, 140, 140, 0.568);
+    color:  rgba(75, 73, 73, 0.788);
     font-style: italic;
 }
 
@@ -47,8 +66,9 @@ header h1{
     font-size: 4em;
     display: flex;
     flex-flow: row;
-    justify-content: center;
+    justify-content: top;
 }
+
 header span{
     font-size: 2em;
     display: flex;
@@ -57,15 +77,17 @@ header span{
     text-shadow: 1.5px 1px 1px white;
 }
 
-body{
-    background-image: url("images/light.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 300px; 
-    max-height: 500px;
-    background-size: 100%;
+
+
+
+/* header span:hover{
+    font-size: 2em;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    color: rgb(68, 68, 68);
 }
+ */
 
 nav {
     position: fixed;
@@ -74,19 +96,20 @@ nav {
     width: 100%;
     display: flex;
     flex-flow: row;
-    justify-content: center;
-    background-color: rgba(245, 245, 245, 0.664);
+    justify-content: left;
+    background-color: transparent;
+    font-weight: bolder;  
+    font-family: 'Bungee Hairline', cursive;
+
 }
 nav a{
     padding: 1em .5em;
-    color: rgb(160, 160, 160);
+    color: #0000009c;
     text-decoration: none;
+    background-color: transparent;
 }
 
-nav a:hover{
-    background:white;
-    animation: mymove 5s infinite;
-}
+
 
 
 section{
@@ -95,43 +118,45 @@ section{
     min-height: 20em;
 }
 
-h6,h7,h8, a:hover{
-    text-decoration: none;
-    
+
+
+#n_Bttn {
+  margin-right: 2em;
+  padding: -3;
+  border-width: 0;
+  border-color: transparent;
+  font-weight: bolder;
+  cursor: pointer;
+  position: relative;
+  font-size: 20px;
+  font-family: 'Bungee Hairline', cursive;
+  padding: 2px 2px;
+  z-index: 0;
+  overflow: hidden;
+  border: 1px solid rgb(151, 66, 66);
+  border-radius: 5px;
+  background-color: rgba(209, 0, 63, 0.644);
+  
+
+  
+  
+
 }
-h6,h7,h8 a{
-    padding: 1em .5em;
-    color: rgba(207, 206, 206, 0.356);
+#n_Bttn:hover {
     
+
+  
+
 }
 
-h6,h7,h8{
-    font-size: 25px;
-    color: rgb(100, 83, 73);
-    
+#aboutMe {
+    /* display: block;
+    height: 200px;
+    background-color: #D1003E;
+    width: 800px; */
 }
 
-#prompt {
-    animation: mymove1 5s infinite; 
-    display: flex;
-    color: rgba(148, 140, 140, 0.568);
-    background-color: transparent;
-    border: none;
-    justify-content: center;
-    font-size: 2em;
-    font-style: bold;
-    border-radius: 50%
-    /* border-color: */
-    
-}
-
-#promptResponse{
-    display: flex;
-    color: rgba(105, 100, 100, 0.753);
-    font-size: 1.5em;
-    
-}
-#projects{
+.projects{
     display: grid;
     grid-template-columns: repeat(3,3fr);
     grid-template-rows: auto;
@@ -139,17 +164,21 @@ h6,h7,h8{
     justify-content: center;
     font-size: 25px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    
     /* box-shadow: 5px 10px; */
     
     
 }
 
-#projects article{
+.projects article{
     padding: 1em;
     width: 100%;
+    font-family: 'Roboto', sans-serif;
  
 
 }
+
 
 
 section > p {
@@ -160,6 +189,7 @@ section > p {
 
 #contactMe{
     font-size: 17px;
+    font-family: 'Roboto', sans-serif;
     
 }
 
