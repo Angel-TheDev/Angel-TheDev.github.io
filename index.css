@@ -1,0 +1,113 @@
+body{
+    background-color: #00FF9A; 
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+
+#n_Btn{
+    background-color: transparent;
+    border:0;
+    display: flex
+    
+    
+}
+
+.fa-github, .fa-linkedin{
+    color: white;
+  
+}
+
+#enterBttn a{
+    top: 0;
+    display: flex;
+    flex-flow: row;
+    border: 0;
+    right: 0;
+    border-color: transparent;
+    color:white;
+    font-weight: bolder;
+    background-color: transparent;
+    text-decoration: none;
+}
+#enterBttn a:hover{
+    color: #00FF9A;
+    
+}
+#enterBttn{
+    background-color: transparent;
+    border: solid 1px white;
+    font-size: 25px;
+    font-weight: 200;
+    outline: none;
+}
+
+#enterBttn:hover{
+    background-color: white;
+    
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    border: solid 1px white;
+    border-radius: 30px;
+    color:rgba(128, 0, 128, 0.616);
+    font-weight: bolder;
+}
+p1{
+    color:#00FF9A;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 100;
+   
+}
+h1{
+    margin: 0;
+    font-weight: 100;
+    font: 'Montserrat';
+}
+footer{
+    margin:0;
+    padding: 0;
+}
+.footer{
+    position: fixed;
+    margin: 0;
+    padding: 0px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    float: bottom;
+    text-align: center;
+    font-size: 90px;
+    color: rgb(245, 252, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* linear-gradient(#D0FDCF, #A2FF9A, #6CF059, #39EB21, #39EB21); */
+
+
