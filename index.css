@@ -24,10 +24,18 @@ nav{
   
 }
 
+.fa-github:hover{
+    color: rgba(17, 17, 17, 0.925);
+}
+.fa-linkedin:hover{
+    color:#0077B1
+
+}
 #enterBttn a{
     top: 0;
     display: flex;
     flex-flow: row;
+    justify-content: center;
     border: 0;
     right: 0;
     border-color: transparent;
@@ -35,9 +43,13 @@ nav{
     font-weight: bolder;
     background-color: transparent;
     text-decoration: none;
+    transition: color .70s ease-out;
+
 }
 #enterBttn a:hover{
     color: #00FF9A;
+    transition: color .70s ease-in;
+
     
 }
 #enterBttn{
@@ -46,10 +58,14 @@ nav{
     font-size: 25px;
     font-weight: 200;
     outline: none;
+    transition: background-color .70s ease-out;
+
 }
 
 #enterBttn:hover{
     background-color: white;
+    transition: background-color .70s ease-in;
+
     
 }
 
@@ -58,10 +74,13 @@ p{
     justify-content: center;
     font-size: 30px;
     text-align: center;
-    border: solid 1px white;
-    border-radius: 30px;
-    color:rgba(128, 0, 128, 0.616);
-    font-weight: bolder;
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: -10px;
+    font-weight: 300;
+    color:rgb(0, 131, 78);
+    background-color: rgba(78, 0, 130, 0.116);
+    margin: -8px;
+    text-indent: 1em;
 }
 p1{
     color:#00FF9A;
@@ -72,10 +91,23 @@ h2{
     font-weight: 100;
    
 }
+
+h2:hover{
+    color: rgba(17, 17, 17, 0.479);
+    font-weight: 700;
+}
 h1{
     margin: 0;
     font-weight: 100;
     font: 'Montserrat';
+    
+
+}
+
+h1:hover{
+    color: rgba(17, 17, 17, 0.479);
+    font-weight: 700;
+
 }
 footer{
     margin:0;
@@ -95,7 +127,22 @@ footer{
 }
 
 
+img{
+    opacity: 0;
+    border-radius: 70%;
+    float: bottom;
+    bottom 0;
+    position: relative;
+    top: 30px;
+    justify-content: right;
+    transition: opacity .25s ease-out;
+}
 
+img:hover{
+    transition: opacity .75s ease-in;
+
+    opacity: 1;
+}
 
 
 

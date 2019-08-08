@@ -7,6 +7,8 @@
     margin: auto;
     display: flex;
     justify-content: center;
+    z-index: 1;
+
     
 }
 .project {
@@ -54,13 +56,17 @@
     
 }
 .prev:hover, .next:hover {
-    background-color: rgba(209, 0, 63, 0.699);
+    /* background-color: rgba(209, 0, 63, 0.699); */
 }
 
 #shaded{
     background: #0000005d;
     z-index: 1;
     padding: 10px;
+    width: 800px;
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
     
 }
 
@@ -72,7 +78,7 @@
     
 }
 body{
-    background-color: #FFFFF6;
+    background-color:#00FF9A;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -80,23 +86,29 @@ body{
     max-height: 500px;
     background-size: 100%;
 }
-#angel {
-    display: flex;
+#angel{
+    visibility: hidden;
+}
+
+#angel{
     border-radius: 70%;
     /* float: top; */
-    animation: mymove1 5s infinite;
     justify-content: right;
+    animation: mymove1 5s infinite;
+    visibility: visible;
+    width: 80px;
+
 }
 
 
 h2 {
-    color: #D1003E;
     background-color: rgba(194, 193, 193, 0.349);
-    font-size: 34px;
+    font-size: 14px;
     display: flex;
     flex-flow: row;
     justify-content: center;
     font-family: 'Bungee Hairline', cursive;
+    color: #000000;
 }
 
 h3 {
@@ -115,9 +127,10 @@ main{
 }
 header{
     font-family: 'Roboto', sans-serif;
-    padding: 5.5em 11em;
+    padding: .40em 11em;
     color: rgb(148, 140, 140);
-    background-color: #D1003E;
+    background-color:rgba(255, 255, 255, 0.5);
+    z-index: -1;
     background-size: cover;
     background-repeat: no-repeat;
     margin: 3.17rem auto 0;
@@ -130,14 +143,14 @@ header:hover{
 }
 
 header h1{
-    font-size: 4em;
+    font-size: 24px;
     display: flex;
     flex-flow: row;
     justify-content: top;
 }
 
 header span{
-    font-size: 2em;
+    font-size: 24px;
     display: flex;
     flex-flow: row;
     justify-content: left;
@@ -173,7 +186,7 @@ nav {
     display: flex;
     flex-flow: row;
     justify-content: left;
-    background-color: rgb(0, 0, 0);
+    background-color: transparent;
     font-weight: bolder;  
     font-family: 'Bungee Hairline', cursive;
 
@@ -196,21 +209,17 @@ section{
 
 
 #n_Bttn {
-  margin-right: 2em;
-  padding: -3;
-  border-width: 0;
-  border-color: transparent;
+  margin-right: 1em;
   font-weight: bolder;
   cursor: pointer;
   position: relative;
   font-size: 20px;
   font-family: 'Bungee Hairline', cursive;
-  padding: 2px 2px;
+  padding: 0;
   z-index: 0;
   overflow: hidden;
-  border: 1px solid rgb(151, 66, 66);
-  border-radius: 5px;
-  background-color: rgba(209, 0, 63, 0.644);
+  border: 0;
+  background-color: transparent;
   
 
   
@@ -241,6 +250,13 @@ section{
 
 }
 
+#projects{
+    z-index: -1;
+
+}
+.project{
+    width: 800px;
+}
 
 
 section > p {
