@@ -351,6 +351,14 @@ p2{
     justify-content: center;
 }
 
+.fa-github:hover{
+    color: rgba(17, 17, 17, 0.925);
+}
+.fa-linkedin:hover{
+    color:#0077B1
+
+}
+
 #c_Btn{
     outline: none;
 
