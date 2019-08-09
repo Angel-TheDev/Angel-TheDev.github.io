@@ -1,16 +1,18 @@
-/* ///////////////Slideshow///////////// */
-
-
-.ss_Container {
-    max-width: 500px;
-    position: relative;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-
-    
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color:#00FF9A;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 300px; 
+    max-height: 500px;
+    background-size: 100%;
 }
+
+
+
+
+
 .project {
     z-index: -1;
     display: flex;
@@ -21,54 +23,7 @@
 
   
 
-.text {
-    color: #000000;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: #D4D4D4;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    display: flex;
-    justify-content: center;
-}
-  
-.next {
-    right: 0;
-}
 
-.prev{
-    left: 0;
-    
-}
-.prev:hover, .next:hover {
-    /* background-color: rgba(209, 0, 63, 0.699); */
-}
-
-#shaded{
-    background: #0000005d;
-    z-index: 1;
-    padding: 10px;
-    width: 800px;
-    /* display: flex;
-    justify-content: center; */
-    text-align: center;
-    
-}
 
 
 
@@ -76,15 +31,6 @@
 *{
     margin: 0;
     
-}
-body{
-    background-color:#00FF9A;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 300px; 
-    max-height: 500px;
-    background-size: 100%;
 }
 #angel{
     visibility: hidden;
@@ -96,28 +42,57 @@ body{
     justify-content: right;
     animation: mymove1 5s infinite;
     visibility: visible;
-    width: 80px;
+    width: 60px;
+    margin-left: 5px;
 
 }
 
 
 h2 {
-    background-color: rgba(194, 193, 193, 0.349);
+    /* background-color: rgba(194, 193, 193, 0.349);
     font-size: 14px;
     display: flex;
     flex-flow: row;
     justify-content: center;
-    font-family: 'Bungee Hairline', cursive;
-    color: #000000;
+    color: #000000; */
 }
 
+#pHeader{
+    padding-top: 50px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    font-size:100px;
+    font-weight: 200;
+    color: white;
+}
 h3 {
-    color: #000000;
+    color:rgb(0, 131, 78);
+    padding-left: 8em;
+    font-weight: 400;
+}
+h3:hover{
+    color:white;
+    font-weight: 500;
+    transition: color .25s ease-in;
+    transition: font-weight .25s ease-in;
+
+}
+#VP{
+    padding-left:9em;
+
 }
 
+#port{
+    padding-left:10em;
+}
+span1{
+    padding-left: 1em;
+    color:rgba(255, 255, 255, 0.788);
+
+}
 p{
     text-indent: 1em;
-    font-family: 'Roboto', sans-serif;
     font-weight: bolder;
 }
         
@@ -126,20 +101,21 @@ main{
     margin: 0 auto;
 }
 header{
-    font-family: 'Roboto', sans-serif;
-    padding: .40em 11em;
+    padding: 7em 11em;
+    padding-bottom: .5em;
     color: rgb(148, 140, 140);
-    background-color:rgba(255, 255, 255, 0.5);
+    background-color:rgba(78, 0, 130, 0.116);
     z-index: -1;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 3.17rem auto 0;
+    display: flex;
+    justify-content: center;
+
+    /* margin:  auto 0; */
 }
 header:hover{
     color:  rgba(75, 73, 73, 0.788);
-    font-family: 'Roboto', sans-serif;
-
-    font-style: italic;
+    
 }
 
 header h1{
@@ -147,9 +123,23 @@ header h1{
     display: flex;
     flex-flow: row;
     justify-content: top;
+    margin-left: 15px;
+    padding-left:450px; 
+    margin-top: 10px;
+    font-weight: 200;
 }
 
+h1{
+    margin-left: 15px;
+}
+
+span{
+    margin-left: 15px;
+}
 header span{
+    margin-top: 15px;
+    font-weight: 100;
+    margin-left: 15px;
     font-size: 24px;
     display: flex;
     flex-flow: row;
@@ -180,22 +170,22 @@ header span{
 
 nav {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     width: 100%;
     display: flex;
     flex-flow: row;
-    justify-content: left;
-    background-color: transparent;
-    font-weight: bolder;  
-    font-family: 'Bungee Hairline', cursive;
-
+    background-color: white;
+    z-index: 2;
+    color:#00FF9A;
+    
 }
 nav a{
-    
-    color: #000000;
+    font-weight: 200;  
+    color:#00FF9A;
     text-decoration: none;
     background-color: transparent;
+    
 }
 
 
@@ -206,54 +196,97 @@ section{
     min-height: 20em;
 }
 
-
-
-#n_Bttn {
-  margin-right: 1em;
-  font-weight: bolder;
-  cursor: pointer;
-  position: relative;
-  font-size: 20px;
-  font-family: 'Bungee Hairline', cursive;
-  padding: 0;
-  z-index: 0;
-  overflow: hidden;
-  border: 0;
-  background-color: transparent;
-  
-
-  
-  
-
+#pImg{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    height: 250px;
+    /* width:600px; */
 }
-#n_Bttn:hover {
+
+article a{
+    text-decoration: none;
+    /* font-weight: 200; */
+}
+article{
+    background-color: rgba(78, 0, 130, 0.116);
+    padding: .5em 1.6em;
     
 
-  
+    /* margin-right: 1em; */
 
 }
 
-#aboutMe {
-    /* display: block;
-    height: 200px;
-    background-color: #D1003E;
-    width: 800px; */
+#n_Bttn {
+    margin-right: 1em;
+    /* font-weight: 100; */
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    /* padding: 8px 25px; */
+    z-index: 0;
+    overflow: hidden;
+    border: 0;
+    background-color: transparent;
+    height: 50px;
+    /* color:#00FF9A; */
+    margin-top: 0px;
+    padding-left: 10px;
+    padding-top: 19px;
+    padding-right: 10px;
+    
 }
 
-\
+
+#n_Bttn a{
+    /* font-weight: 100;   */
+    
+    
+}
+
+#n_Bttn:hover{
+    background-color:#00FF9A;
+    color: white;
+    font-weight: 400;
+    border: solid 1px white;
+    transition: background-color .50s ease-in;
+
+    /* border-radius: 90px; */
+    
+}
+
+
+
+
+#n_Bttn a:hover {
+    background-color:#00FF9A;
+    color: white;
+    font-weight: 400;
+    
+    
+    
+
+}
+
+
+
 
 .projects article{
     padding: 1em;
     width: 100%;
-    font-family: 'Roboto', sans-serif;
- 
-
+    
+    
 }
 
-#projects{
-    z-index: -1;
-
+#Projects
+{
+    border:solid 1px rgb(255, 255, 255);
+    display: flex;
+    flex-flow: row;
+    
 }
+
+
 .project{
     width: 800px;
 }
@@ -265,10 +298,74 @@ section > p {
     
 }
 
+p2{
+    font-size: 20px;
+    color: rgb(0, 131, 78);
+    
+}
+#p2Con{
+    padding-top: 5em;
+}
+#tiHeader{
+    font-size: 70px;
+    font-weight: 200;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    color: rgb(0, 131, 78);
+    display: flex;
+    justify-content: center;
+    
+}
+#skills{
+    padding-top: 0;
+    margin: 0;
+    margin-left: 20px;
+    padding-bottom: 7em;
+}
+
 #contactMe{
     font-size: 17px;
-    font-family: 'Roboto', sans-serif;
+    background-color: rgba(255, 255, 255, 0.479);
+    margin:0;
+    padding-top: 0;
+    padding-bottom: 5em;
     
+}
+
+#cmHeader{
+    font-size: 70px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    color: rgb(0, 131, 78);
+    font-weight: 200;
+}
+
+#contact{
+    color: white;
+    outline: none;
+    padding-top: 5em;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+#c_Btn{
+    outline: none;
+
+    padding-left: 3em; 
+    background-color: transparent;
+    border:0;
+    
+}
+.fa-phone{
+    font-size: 3em;
+}
+.fa-github, .fa-linkedin, .fa-phone, .fa-envelope, .fa-file{
+    color: white;
+    outline: none;
+  
 }
 header h3 {
     display: flex;
@@ -276,9 +373,7 @@ header h3 {
     justify-content: right;
 } 
 
-header p2 {
 
-}
 
 ul li{
     list-style-type: none;
@@ -289,8 +384,8 @@ ul li{
 
 
 footer{
-    background-color: rgba(245, 245, 245, 0.664);
-    color: rgb(119, 117, 117);
+    background-color: rgb(245, 245, 245);
+    color: #00FF9A;
     font-synthesis: weight;
     font-size: 20px;
     display: flex;
@@ -308,8 +403,10 @@ footer{
 }
 
 @keyframes mymove1 {
-    40% {box-shadow: 10px 20px 30px rgba(71, 70, 62, 0.623);}
+    40% {box-shadow: 5px 10px 20px rgba(71, 70, 62, 0.623);}
    }
 
 
    /* /////////////////////////////////////////////////////////// */
+
+
