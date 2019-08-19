@@ -1,39 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <meta name= "viewport" content= width=device-width, initial-scale=1" /> -->
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Angel Davis Portfolio</title>      
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:200&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:100&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline&display=swap" rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angel Davis Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
-        
-        <link rel="stylesheet" type="text/css" href="./index.css">
-    </head>
-    <body>
-        <header>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
+
+    <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span id="myTitle" class="navItem">Software Developer</span>
+            <!-- changed n_Btn to a class as it applied over multiple things -->
+            <!-- do these have to be buttons? maybe try ul>li as button has its own things -->
             
-            <nav>
-                <h2>Software Developer</h2>
-                <button id="n_Btn"><a href="https://www.linkedin.com/in/angeldavis-dev/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></button>
-                <button id="n_Btn"><a href="https://github.com/Angel-TheDev" target="_blank"><i class="fab fa-github fa-2x"></i></a></button>
-                <button id="n_Btn"><i class="fas fa-file fa-2x"></i></button>
-                <button id="n_Btn"><i class="fas fa-envelope fa-2x"></i></button>
-                <button id="n_Btn"><a href="https://github.com/Angel-TheDev" target="_blank"></a><i class="fas fa-phone"></i></a></button></nav>
-        </header>
-        <section>
-            <p>I am a Full Stack Software Developer with a previous background in customer tech support. I've assisted in educating, servicing and troubleshooting multiple programs, products, and devices. As a software developer, I utilize the user's perspective to produce user friendly programs that provide top quality experiences, while adhering to best standards and practices of software development.</p>
-        </section>
-        <footer class="footer">
-            <h1>Angel<p1><img src="images/LinkedIn-Color.png" alt="Angel" id="angel"></p1>Davis</h1>
-                <button id="enterBttn">
-                    <a href="inside.html" target="_blank">See More</a>
-                </button>
+            <a class="navItem" href="https://www.linkedin.com/in/angeldavis-dev/">
+                <i class="fab fa-linkedin fa-2x headerIcon"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a class="navItem" href="https://github.com/Angel-TheDev">
+                <i class="fab fa-github fa-2x headerIcon"></i>
+                <span>Github</span>
+            </a>
+            <!-- <a class="navItem" href="#">
+                <i class="fas fa-file fa-2x headerIcon"></i>
+                <span>Resume</span>
+            </a> -->
+            <a class="navItem" href="#portfolio">
+                <i class="fas fa-folder fa-2x headerIcon"></i>
+                <span>Projects</span>
+            </a>
+            <a class="navItem" href="#">
+                <i class="fas fa-envelope fa-2x headerIcon"></i>
+                <span>Contact Me</span>
+            </a>
+        </nav>
+    </header>
+    <section id="top">
+        <div id="intro">
+            <p>
+                I am a Full Stack Software Developer with a previous background in customer tech support. I've assisted in
+                educating, servicing and troubleshooting multiple programs, products, and devices. As a software developer,
+                I utilize the user's perspective to produce user friendly programs that provide top quality experiences
+                while adhering to best standards and practices of software development.
+            </p>
+        </div>
+        <div id="dollar">
+    
+            <span class="myName" id="fName">Angel</span>
+            <img src="images/LinkedIn-Color.png" alt="Angel" id="angel">
+            <span class="myName" id="lName">Davis</span>
+            <!-- <button id="enterBttn">
+                <a href="inside.html"y>See More</a>
+            </button> -->
+        </div>
+        <div id="tabletView">
+            <img src="images/LinkedIn-Color.png" alt="Angel">
+            <p class="euroName">
+                <span>Angel</span>
+                <span>Davis</span>
+            </p>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div id="projects">     
+            <article>
+                    <a href="https://github.com/blairgriffith/Virtual-Pet" target="_blank">
+                        <h3 id="VP">Virtual Pet</h3>
+                        <img src="images/Virtual Pet.JPG" id="pImg"></a>
+                        <span1>Made with C# more specifically, .Net Core Framework.</span1>
+                </article>
+                <article>
+                    <a href="https://github.com/Angel-TheDev/Angel-TheDev.github.io" target="_blank">
+                        <h3 id="port">Hero Match</h3>
+                        <img src="images/HeroMatch.JPG" id="pImg"></a>
+                        <span1>Made with ASP.Net Entity Framework, SQL, JavaScript, HTML, CSS, etc.</span1>
+                </article>
+                <article>
+                    <a href="https://github.com/Angel-TheDev/AlbumCollection" target="_blank">
+                        <h3>Album Collection</h3>
+                        <img src="images/AlbCol.JPG" id="pImg"></a>
+                        <span1>Made with JavaScript, SQL, ASP.Net Entity Framework, HTML, and CSS.</span1>
+                </article>
+                </div>
+                <h2 id="pHeader">P R O J E C T S</h2>
+    </section>
+    <section id="skills">
+        <h2 id="tiHeader">TECHNICAL INVENTORY</h3>
+        <p>C# • .NET Core • Active Server Pages / ASP.net • JavaScript • Flexbox • MVC • HTML • CSS • Grid • TDD • Agile (Scrum) • Object Oriented Programming (OOP) • AJAX • JSON • React • Restful APIs • Responsive Design / Mobile • Structured Query Language (SQL) •</br> Relational Databases / MS SQL • Source Control / GitHub</p>
+    </section>
+    <section id="contactMe">
+        <h2 id="cmHeader">CONTACT ME</h2>
+        <div id="contact">
+            <button class="c_Btn"><a href="https://www.linkedin.com/in/angeldavis-dev/" target="_blank"><i class="fab fa-linkedin fa-4x"></i></a></button>
+            <button class="c_Btn"><a href="https://github.com/Angel-TheDev" target="_blank"><i class="fab fa-github fa-4x"></i></a></button>
+        </div>
+            <div>
+                <ul>
+                    <li>AngelDavis.dev@gmail.com</li>
+                    <li>216-857-1258</li>
+                </ul>
+            </div> 
+        </div>
+    </section>
+    <footer class="footer">
+        &copy; 2019 Angel Davis Portfolio
     </footer>
     <script src="./app.js"></script>
-    </body>
+</body>
+
 </html>
+                                <!-- <form>
+                                    <input type="text" placeholder="name" name="" id="inputName">
+                                    <input type="email" placeholder="you@email.com" name="" id="inputEmail">
+                                    <input type="phone" placeholder="(555)555-1234" name="" id="inputPhone">
+                                    <textarea id="inputMessage" placeholder="Message Angel"></textarea>
+                                    <input id="inputSubmit" type="button" value="submit">
+                                </form> -->
