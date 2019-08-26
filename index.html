@@ -19,28 +19,22 @@
     <header>
         <nav>
             <span id="myTitle" class="navItem">Software Developer</span>
-            <!-- changed n_Btn to a class as it applied over multiple things -->
-            <!-- do these have to be buttons? maybe try ul>li as button has its own things -->
             
-            <a class="navItem" href="https://www.linkedin.com/in/angeldavis-dev/">
-                <i class="fab fa-linkedin fa-2x headerIcon"></i>
-                <span>LinkedIn</span>
-            </a>
-            <a class="navItem" href="https://github.com/Angel-TheDev">
-                <i class="fab fa-github fa-2x headerIcon"></i>
-                <span>Github</span>
-            </a>
-            <!-- <a class="navItem" href="#">
-                <i class="fas fa-file fa-2x headerIcon"></i>
-                <span>Resume</span>
-            </a> -->
             <a class="navItem" href="#portfolio">
                 <i class="fas fa-folder fa-2x headerIcon"></i>
                 <span>Projects</span>
             </a>
-            <a class="navItem" href="#">
+            <a class="navItem" href="#contactMe">
                 <i class="fas fa-envelope fa-2x headerIcon"></i>
                 <span>Contact Me</span>
+            </a>
+            <a class="navItem" href="https://www.linkedin.com/in/angeldavis-dev/"  target="_blank">
+                <i class="fab fa-linkedin fa-2x headerIcon"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a class="navItem" href="https://github.com/Angel-TheDev"  target="_blank">
+                <i class="fab fa-github fa-2x headerIcon"></i>
+                <span>Github</span>
             </a>
         </nav>
     </header>
@@ -71,45 +65,53 @@
         </div>
     </section>
     <section id="portfolio">
+        <h2 id="pHeader">P R O J E C T S</h2>
         <div id="projects">     
             <article>
-                    <a href="https://github.com/blairgriffith/Virtual-Pet" target="_blank">
-                        <h3 id="VP">Virtual Pet</h3>
-                        <img src="images/Virtual Pet.JPG" id="pImg"></a>
-                        <span1>Made with C# more specifically, .Net Core Framework.</span1>
+                <a href="https://github.com/blairgriffith/Virtual-Pet" target="_blank">
+                    <h3 id="VP">Virtual Pet</h3>
+                    <img src="images/Virtual Pet.JPG" id="pImg"></a>
+                    <p>Made with C# more specifically, .Net Core Framework.</p>
+            </article>
+            <article>
+                <a href="https://github.com/Angel-TheDev/Angel-TheDev.github.io" target="_blank">
+                    <h3 id="port">Hero Match</h3>
+                    <img src="images/HeroMatch.JPG" id="pImg"></a>
+                    <p>Made with ASP.Net Entity Framework, SQL,</br> JavaScript, HTML, CSS, etc.</p>
+            </article>
+            <article>
+                <a href="https://github.com/Angel-TheDev/AlbumCollection" target="_blank">
+                    <h3>Album Collection</h3>
+                    <img src="images/AlbCol.JPG" id="pImg"></a>
+                    <p>Made with JavaScript, SQL, ASP.Net </br>Entity Framework, HTML, and CSS.</p> 
                 </article>
-                <article>
-                    <a href="https://github.com/Angel-TheDev/Angel-TheDev.github.io" target="_blank">
-                        <h3 id="port">Hero Match</h3>
-                        <img src="images/HeroMatch.JPG" id="pImg"></a>
-                        <span1>Made with ASP.Net Entity Framework, SQL, JavaScript, HTML, CSS, etc.</span1>
-                </article>
-                <article>
-                    <a href="https://github.com/Angel-TheDev/AlbumCollection" target="_blank">
-                        <h3>Album Collection</h3>
-                        <img src="images/AlbCol.JPG" id="pImg"></a>
-                        <span1>Made with JavaScript, SQL, ASP.Net Entity Framework, HTML, and CSS.</span1>
-                </article>
-                </div>
-                <h2 id="pHeader">P R O J E C T S</h2>
+            </div>
     </section>
     <section id="skills">
         <h2 id="tiHeader">TECHNICAL INVENTORY</h3>
-        <p>C# • .NET Core • Active Server Pages / ASP.net • JavaScript • Flexbox • MVC • HTML • CSS • Grid • TDD • Agile (Scrum) • Object Oriented Programming (OOP) • AJAX • JSON • React • Restful APIs • Responsive Design / Mobile • Structured Query Language (SQL) •</br> Relational Databases / MS SQL • Source Control / GitHub</p>
+        <p id="tech">C# • .NET Core • Active Server Pages / ASP.net • JavaScript • Flexbox • MVC • HTML • CSS • Grid • TDD • Agile (Scrum) • Object Oriented Programming (OOP) • AJAX • JSON • React • Restful APIs • Responsive Design / Mobile • Structured Query Language (SQL) •</br> Relational Databases / MS SQL • Source Control / GitHub</p>
     </section>
     <section id="contactMe">
         <h2 id="cmHeader">CONTACT ME</h2>
+        <!-- <form> 
+           <input type="text" placeholder="name" name="" id="inputName">
+           <input type="email" placeholder="you@email.com" name="" id="inputEmail">
+           <input type="phone" placeholder="(555)555-1234" name="" id="inputPhone">
+           <textarea id="inputMessage" placeholder="Message Angel"></textarea>
+           <div id="c_bttn">
+           <input id="inputSubmit" type="button" value="submit">
+           </div>
+       </form> -->
+       <div>
+           <ul>
+               <li>AngelDavis.dev@gmail.com</li>
+               <li>216-857-1258</li>
+           </ul>
+        </div> 
         <div id="contact">
             <button class="c_Btn"><a href="https://www.linkedin.com/in/angeldavis-dev/" target="_blank"><i class="fab fa-linkedin fa-4x"></i></a></button>
             <button class="c_Btn"><a href="https://github.com/Angel-TheDev" target="_blank"><i class="fab fa-github fa-4x"></i></a></button>
-        </div>
-            <div>
-                <ul>
-                    <li>AngelDavis.dev@gmail.com</li>
-                    <li>216-857-1258</li>
-                </ul>
-            </div> 
-        </div>
+        </div>      
     </section>
     <footer class="footer">
         &copy; 2019 Angel Davis Portfolio
@@ -118,10 +120,3 @@
 </body>
 
 </html>
-                                <!-- <form>
-                                    <input type="text" placeholder="name" name="" id="inputName">
-                                    <input type="email" placeholder="you@email.com" name="" id="inputEmail">
-                                    <input type="phone" placeholder="(555)555-1234" name="" id="inputPhone">
-                                    <textarea id="inputMessage" placeholder="Message Angel"></textarea>
-                                    <input id="inputSubmit" type="button" value="submit">
-                                </form> -->
