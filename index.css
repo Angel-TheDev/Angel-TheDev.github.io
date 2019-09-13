@@ -27,13 +27,21 @@ header > nav {
   color: rgb(0, 131, 78);
 }
 
+a {
+  text-decoration: none;
+}
+
 .navLinks{
   display: none;
 }
 
+.cLinks{
+  color: white;
+}
+
 .navItem{
   text-decoration: none;
-	color:#00ff9a;;
+	color:#00ff9a;
 }
 
 #intro > p{
@@ -294,7 +302,7 @@ footer{
 @media only screen and (min-width: 1200px){
   
   #myTitle{
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 300;
   }
 
@@ -320,7 +328,7 @@ footer{
     margin-top: 170px;
     display: block;
     text-align: center;
-    font-size: 150px;
+    font-size: 180px;
     font-weight: 100;
   }
   #dollar img {
@@ -358,12 +366,32 @@ footer{
   .portfolio {
     padding-top: 20px;
     background-color: rgba(78, 0, 130, 0.116);
+    
+  }
+
+  .project{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  h3{
+    padding-left: 0;
+    
+
+  }
+
+  #pImg{
+    height: 250px;
+    padding: 20px;
   
   }
+
   .project > p{
-    text-align: center;
-    padding-top: 100px;
+    padding-top: 0px;
     display: flex;
+    text-align: center;
 
 
   }
