@@ -1,3 +1,5 @@
+import apiActions from './api/api-actions';
+
 // Create event list for sub button
 let button = document.querySelector("#inputSubmit")
 
@@ -19,7 +21,7 @@ button.addEventListener("click", function (e) {
     }
     //make a post to the api passing that object
 
-    fetch('https://cryptic-caverns-70902.herokuapp.com/email',
+    api-Actions.postRequest('https://cryptic-caverns-70902.herokuapp.com/email',
         { method: 'post', body: JSON.stringify(emailOptions) })
         .then (x => console.log("succeeded"));
 })
